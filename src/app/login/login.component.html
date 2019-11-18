@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="wrapper">
+        <form name="Login_Form" class="form-signin" [formGroup]="loginForm">
+            <h3 class="form-signin-heading">LOGIN</h3>
+            <hr class="colorgraph"><br>
+
+            <input type="text" class="form-control" name="Email" placeholder="Email" formControlName="email"
+                required="" />
+            <input type="password" class="form-control" name="Password" placeholder="Password"
+                formControlName="password" required="" /> <br>
+
+            <button class="btn btn-lg btn-primary btn-block" (click)="login()" type="Submit">Login</button>
+        </form>
+    </div>
+</div>
